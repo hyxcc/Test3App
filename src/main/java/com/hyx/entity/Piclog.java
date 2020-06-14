@@ -4,9 +4,9 @@ package com.hyx.entity;
  * 类目_作品的关联类
  */
 public class Piclog {
-    private int id;
-    private int catalogId;
-    private int pictureId;
+    private Integer id;
+    private Integer catalogId;
+    private Integer pictureId;
     private Long createAt;
     private Long updateAt;
     private String createBy;

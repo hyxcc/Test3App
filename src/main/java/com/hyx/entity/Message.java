@@ -4,9 +4,9 @@ package com.hyx.entity;
  * 留言类
  */
 public class Message {
-    private int id;
-    private int authorId;
-    private int pictureId;
+    private Integer id;
+    private Integer authorId;
+    private Integer pictureId;
     private String name;
     private int priority;
     private Long createAt;

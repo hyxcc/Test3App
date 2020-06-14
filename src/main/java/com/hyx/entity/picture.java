@@ -4,11 +4,11 @@ package com.hyx.entity;
  * 作品类
  */
 public class picture {
-    private int id;
-    private int authoeId;
+    private Integer id;
+    private Integer authoeId;
     private String name;
     private String intro;
-    private int priority;
+    private Integer priority;
     private String image;
     private Long createAt;
     private Long updateAt;

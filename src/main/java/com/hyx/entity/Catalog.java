@@ -4,9 +4,9 @@ package com.hyx.entity;
  * 目录类
  */
 public class Catalog {
-    private int id;
+    private Integer id;
     private String name;
-    private int parentId;
+    private Integer parentId;
     private Long createAt;
     private Long updateAt;
     private String createBy;

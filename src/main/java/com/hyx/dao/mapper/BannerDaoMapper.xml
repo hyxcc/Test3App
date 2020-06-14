@@ -5,7 +5,6 @@
 <mapper namespace="com.hyx.dao.BannerDao">
     <resultMap id="forBanner" type="Banner">
         <id column="id" property="id"  javaType="Integer"></id>
-        <result column="picture_id" property="pictureId" javaType="Integer"/>
         <result column="create_at" property="createAt" javaType="Long"></result>
         <result column="update_at" property="updateAt" javaType="Long"></result>
         <result column="create_by" property="createBy" javaType="String"></result>
@@ -16,8 +15,8 @@
     </select>
     <insert id="addBanner" parameterType="Banner" useGeneratedKeys="true" keyProperty="id">
         insert into banner (
-        picture_id,image,url,state,priority,create_at,update_at,create_by,update_by)
-        value (#{pictureId},#{image},#{url},#{state},#{priority},#{createAt},#{updateAt},#{createBy},#{updateBy})
+        image,url,state,priority,create_at,update_at,create_by,update_by)
+        value (#{image},#{url},#{state},#{priority},#{createAt},#{updateAt},#{createBy},#{updateBy})
     </insert>
     <update id="updateBanner" parameterType="Banner">
         update banner set state=#{state} where id = #{id}

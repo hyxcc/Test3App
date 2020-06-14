@@ -4,7 +4,7 @@ package com.hyx.entity;
  * 作者类
  */
 public class Author {
-    private int id;
+    private Integer id;
     private String name;
     //简介
     private String intro;

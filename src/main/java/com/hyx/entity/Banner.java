@@ -4,16 +4,15 @@ package com.hyx.entity;
  * banner类
  */
 public class Banner {
-    private int id;
-    private int pictureId;
+    private Integer id;
     //缩略图链接
     private String image;
     //超链接
     private String url;
     //状态 0上架 1下架
-    private int state;
+    private Integer state;
     //优先级
-    private int priority;
+    private Integer priority;
     private Long createAt;
     private Long updateAt;
     private String createBy;
@@ -25,14 +24,6 @@ public class Banner {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getPictureId() {
-        return pictureId;
-    }
-
-    public void setPictureId(int pictureId) {
-        this.pictureId = pictureId;
     }
 
     public String getImage() {
@@ -103,7 +94,6 @@ public class Banner {
     public String toString() {
         return "Banner{" +
                 "id=" + id +
-                ", pictureId=" + pictureId +
                 ", image='" + image + '\'' +
                 ", url='" + url + '\'' +
                 ", state=" + state +
