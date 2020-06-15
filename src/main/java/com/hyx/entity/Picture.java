@@ -3,9 +3,10 @@ package com.hyx.entity;
 /**
  * 作品类
  */
-public class picture {
+public class Picture {
     private Integer id;
     private Integer authoeId;
+    private Integer catalogId;
     private String name;
     private String intro;
     private Integer priority;
@@ -29,6 +30,26 @@ public class picture {
 
     public void setAuthoeId(int authoeId) {
         this.authoeId = authoeId;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setAuthoeId(Integer authoeId) {
+        this.authoeId = authoeId;
+    }
+
+    public Integer getCatalogId() {
+        return catalogId;
+    }
+
+    public void setCatalogId(Integer catalogId) {
+        this.catalogId = catalogId;
+    }
+
+    public void setPriority(Integer priority) {
+        this.priority = priority;
     }
 
     public String getName() {
@@ -97,9 +118,10 @@ public class picture {
 
     @Override
     public String toString() {
-        return "picture{" +
+        return "Picture{" +
                 "id=" + id +
                 ", authoeId=" + authoeId +
+                ", catalogId=" + catalogId +
                 ", name='" + name + '\'' +
                 ", intro='" + intro + '\'' +
                 ", priority=" + priority +

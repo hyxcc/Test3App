@@ -5,8 +5,8 @@ package com.hyx.entity;
  */
 public class Message {
     private Integer id;
-    private Integer authorId;
-    private Integer pictureId;
+    private Author author;
+    private Picture picture;
     private String name;
     private int priority;
     private Long createAt;
@@ -22,20 +22,24 @@ public class Message {
         this.id = id;
     }
 
-    public int getAuthorId() {
-        return authorId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
+    public Author getAuthor() {
+        return author;
     }
 
-    public int getPictureId() {
-        return pictureId;
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
-    public void setPictureId(int pictureId) {
-        this.pictureId = pictureId;
+    public Picture getPicture() {
+        return picture;
+    }
+
+    public void setPicture(Picture picture) {
+        this.picture = picture;
     }
 
     public String getName() {
@@ -90,8 +94,8 @@ public class Message {
     public String toString() {
         return "Message{" +
                 "id=" + id +
-                ", authorId=" + authorId +
-                ", pictureId=" + pictureId +
+                ", author=" + author +
+                ", picture=" + picture +
                 ", name='" + name + '\'' +
                 ", priority=" + priority +
                 ", createAt=" + createAt +

@@ -34,6 +34,7 @@ public class BannerTest {
     public void findBanner(){
         List<Banner> list = new ArrayList<Banner>();
         list = bannerService.findBanner();
+        System.out.println(System.currentTimeMillis());
         System.out.println(list);
     }
     @Ignore

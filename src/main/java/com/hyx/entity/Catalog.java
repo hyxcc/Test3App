@@ -6,17 +6,17 @@ package com.hyx.entity;
 public class Catalog {
     private Integer id;
     private String name;
-    private Integer parentId;
+    private Catalog parent;
     private Long createAt;
     private Long updateAt;
     private String createBy;
     private String updateBy;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -28,12 +28,14 @@ public class Catalog {
         this.name = name;
     }
 
-    public int getParentId() {
-        return parentId;
+
+
+    public Catalog getParent() {
+        return parent;
     }
 
-    public void setParentId(int parentId) {
-        this.parentId = parentId;
+    public void setParent(Catalog parent) {
+        this.parent = parent;
     }
 
     public Long getCreateAt() {
@@ -73,7 +75,7 @@ public class Catalog {
         return "Catalog{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", parentId=" + parentId +
+                ", parent=" + parent +
                 ", createAt=" + createAt +
                 ", updateAt=" + updateAt +
                 ", createBy='" + createBy + '\'' +
