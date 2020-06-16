@@ -37,10 +37,10 @@ public class BannerTest {
         System.out.println(System.currentTimeMillis());
         System.out.println(list);
     }
-    @Ignore
+    @Test
     public void updateBanner(){
         Banner banner= new Banner();
-        banner.setId(1);
+        banner.setId(2);
         banner.setState(1);
         int num = bannerService.updateBanner(banner);
         System.out.println(num);

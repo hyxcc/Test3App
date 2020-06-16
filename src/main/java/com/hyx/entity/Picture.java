@@ -1,11 +1,13 @@
 package com.hyx.entity;
 
+import java.util.List;
+
 /**
  * 作品类
  */
 public class Picture {
     private Integer id;
-    private Integer authoeId;
+    private Integer authorId;
     private Integer catalogId;
     private String name;
     private String intro;
@@ -15,6 +17,19 @@ public class Picture {
     private Long updateAt;
     private String createBy;
     private String updateBy;
+    List<Message> message;
+
+    public void setAuthorId(Integer authorId) {
+        this.authorId = authorId;
+    }
+
+    public List<Message> getMessage() {
+        return message;
+    }
+
+    public void setMessage(List<Message> message) {
+        this.message = message;
+    }
 
     public int getId() {
         return id;
@@ -24,20 +39,16 @@ public class Picture {
         this.id = id;
     }
 
-    public int getAuthoeId() {
-        return authoeId;
+    public int getAuthorId() {
+        return authorId;
     }
 
-    public void setAuthoeId(int authoeId) {
-        this.authoeId = authoeId;
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
     }
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public void setAuthoeId(Integer authoeId) {
-        this.authoeId = authoeId;
     }
 
     public Integer getCatalogId() {
@@ -120,7 +131,7 @@ public class Picture {
     public String toString() {
         return "Picture{" +
                 "id=" + id +
-                ", authoeId=" + authoeId +
+                ", authorId=" + authorId +
                 ", catalogId=" + catalogId +
                 ", name='" + name + '\'' +
                 ", intro='" + intro + '\'' +
@@ -130,6 +141,7 @@ public class Picture {
                 ", updateAt=" + updateAt +
                 ", createBy='" + createBy + '\'' +
                 ", updateBy='" + updateBy + '\'' +
+                ", message=" + message +
                 '}';
     }
 }
