@@ -13,8 +13,9 @@
     <select id="findBanner" resultMap="forBanner">
         select * from banner
     </select>
-    <insert id="addBanner"  useGeneratedKeys="true" keyProperty="id">
-        insert into banner(image,url,state,priority,create_at,update_at,create_by,update_by)
+    <insert id="addBanner" parameterType="Banner" useGeneratedKeys="true" keyProperty="id">
+       insert into banner
+       ( image,url,state,priority,create_at,update_at,create_by,update_by)
         value (#{image},#{url},#{state},#{priority},#{createAt},#{updateAt},#{createBy},#{updateBy})
     </insert>
     <update id="updateBanner" parameterType="Banner">

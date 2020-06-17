@@ -1,6 +1,7 @@
 package com.hyx.dao;
 
 import com.hyx.entity.Banner;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

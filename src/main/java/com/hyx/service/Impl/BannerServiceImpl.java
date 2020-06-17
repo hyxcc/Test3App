@@ -12,7 +12,9 @@ public class BannerServiceImpl implements BannerService {
     @Resource
     private BannerDao bannerDao;
     @Override
-    public int addBanner(Banner banner) { return bannerDao.addBanner(banner); }
+    public int addBanner(Banner banner) {
+        System.out.println(banner);
+        return bannerDao.addBanner(banner); }
     @Override
     public List<Banner> findBanner() {
         return bannerDao.findBanner();
