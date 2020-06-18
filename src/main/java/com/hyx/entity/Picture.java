@@ -19,36 +19,20 @@ public class Picture {
     private String updateBy;
     List<Message> message;
 
-    public void setAuthorId(Integer authorId) {
-        this.authorId = authorId;
-    }
-
-    public List<Message> getMessage() {
-        return message;
-    }
-
-    public void setMessage(List<Message> message) {
-        this.message = message;
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getAuthorId() {
-        return authorId;
-    }
-
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
     }
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(Integer authorId) {
+        this.authorId = authorId;
     }
 
     public Integer getCatalogId() {
@@ -57,10 +41,6 @@ public class Picture {
 
     public void setCatalogId(Integer catalogId) {
         this.catalogId = catalogId;
-    }
-
-    public void setPriority(Integer priority) {
-        this.priority = priority;
     }
 
     public String getName() {
@@ -79,11 +59,11 @@ public class Picture {
         this.intro = intro;
     }
 
-    public int getPriority() {
+    public Integer getPriority() {
         return priority;
     }
 
-    public void setPriority(int priority) {
+    public void setPriority(Integer priority) {
         this.priority = priority;
     }
 
@@ -125,6 +105,14 @@ public class Picture {
 
     public void setUpdateBy(String updateBy) {
         this.updateBy = updateBy;
+    }
+
+    public List<Message> getMessage() {
+        return message;
+    }
+
+    public void setMessage(List<Message> message) {
+        this.message = message;
     }
 
     @Override
